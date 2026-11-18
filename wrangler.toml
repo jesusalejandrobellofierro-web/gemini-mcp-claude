@@ -1,0 +1,17 @@
+name = "conector-gemini"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+# Opcional: guardar las imagenes generadas en R2 y obtener una URL descargable.
+# Para activarlo:
+#   1. npx wrangler r2 bucket create imagenes-gemini
+#   2. descomenta las 4 lineas de abajo
+#   3. pon la URL publica del bucket (o de tu dominio) en PUBLIC_URL
+#   4. npx wrangler deploy
+#
+# [[r2_buckets]]
+# binding = "IMAGENES"
+# bucket_name = "imagenes-gemini"
+#
+# [vars]
+# PUBLIC_URL = "https://pub-xxxxxxxx.r2.dev"
